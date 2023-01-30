@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class temp
+{
+    public static void main(String[] a)
+    {
+        Scanner scan=new Scanner(System.in);
+        int[][] arr=new int[3][3];
+        
+        int i,j;
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+             arr[i][j]=scan.nextInt();
+            }
+            System.out.println("\n");
+        }
+        System.out.print("before swap matrix\n");
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.printf("%d\t",arr[i][j]);
+            }
+            System.out.println("");
+        }
+        System.out.print("after swap matrix\n");
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+           
+            {
+                System.out.print("%d\t",arr[j][i]);
+            }
+            System.out.println("");
+        }
+    
+
+
+    }
+}
